@@ -1,0 +1,28 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+<script>
+$(function(){
+            $('#value1, #value2').keyup(function(){
+               var value1 = parseFloat($('#value1').val()) || 0;
+               var value2 = parseFloat($('#value2').val()) || 0;
+			   $('#sum').val(value1 + value2);
+            });
+         });
+</script>
+<style>
+	.test
+{
+    background: transparent;
+    border: none;
+	border:transparent;
+	border-color: white;
+	outline: none;
+	
+}
+</style>
+
+<input type="number" name="value1" id="value1" class="form-control" min="0" placeholder="Enter first value" required />
+
+<input type="number" name="value2" id="value2" class="form-control" min="0" placeholder="Enter second value" required />
+
+<input class="test" type="text" id="sum" readonly>
+                    
